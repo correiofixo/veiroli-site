@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://veiroli.com.br/sitemap.xml
