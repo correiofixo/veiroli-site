@@ -1,0 +1,24 @@
+# Veiroli
+
+> Consultoria independente especializada no ERP e-Millennium: implantação, suporte corretivo, integrações omnichannel e conformidade fiscal (IBS/CBS). 26 anos de experiência direta no sistema. Atuação em São Paulo, SP.
+
+Fundador: Josué de Oliveira. Contato: josue@veiroli.com.br. LinkedIn: https://www.linkedin.com/in/veiroli/
+
+## Site
+
+- [Home](https://veiroli.com.br/): visão geral da consultoria — ambiente e cenário do setor, metodologia de atuação (diagnóstico, correção, operação estável), frentes de serviço, sobre a empresa e contato.
+
+## Frentes de atuação
+
+- Implantação e suporte corretivo do ERP e-Millennium
+- Conformidade fiscal — IBS/CBS (Reforma Tributária)
+- Integrações omnichannel (loja física, e-commerce, marketplace)
+- Compras e importação
+- Logística e distribuição
+- Gestão comercial B2B
+- Administrativo e financeiro
+- Automação e indicadores (via eBiller, ferramenta própria de automação fiscal — https://www.ebiller.com.br/)
+
+## Observações
+
+Site institucional de página única (seções por âncora, sem URLs internas separadas). Todo o conteúdo relevante sobre a empresa e seus serviços está na página inicial listada acima.
