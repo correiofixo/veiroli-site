@@ -151,6 +151,7 @@
     max-width:var(--maxw);margin:0 auto;
     background:var(--sand);color:var(--ink);border-radius:var(--radius);
     padding:56px 48px;border:1px solid var(--sand-line);
+    position:relative;
   }
   @media (max-width:700px){.hero-inner{padding:36px 24px;border-radius:16px;}}
   .eyebrow{font-family:'JetBrains Mono';font-size:12.5px;font-weight:500;color:var(--blue);text-transform:uppercase;letter-spacing:.08em;display:flex;align-items:center;gap:8px;margin-bottom:20px;}
@@ -236,7 +237,8 @@
   .stat-k{display:block;font-size:13.5px;color:var(--slate);line-height:1.45;}
 
   /* ---------- STATS HIGHLIGHT (full-bleed dark, mesmo estilo da seção "Como trabalho") ---------- */
-  .stats-highlight{background:var(--blue-deep);color:var(--white);}
+  .stats-highlight{background:var(--blue-deep);color:var(--white);position:relative;overflow:hidden;}
+  .stats-highlight .wrap{position:relative;z-index:1;}
   .stats-highlight .section-head .eyebrow{color:var(--blue-soft);}
   .stats-highlight .section-head .eyebrow::before{background:var(--blue-soft);}
   .stats-highlight .section-head h2{color:var(--white);}
@@ -248,7 +250,7 @@
 
   /* ---------- CONTACT ---------- */
   .contact-wrap{padding:0 24px 24px;}
-  .contact{max-width:var(--maxw);margin:0 auto;background:var(--sand);color:var(--ink);border-radius:var(--radius);padding:48px 48px;border:1px solid var(--sand-line);}
+  .contact{max-width:var(--maxw);margin:0 auto;background:var(--sand);color:var(--ink);border-radius:var(--radius);padding:48px 48px;border:1px solid var(--sand-line);position:relative;}
   @media (max-width:700px){.contact{padding:36px 24px;}}
   .contact-top{max-width:560px;margin-bottom:32px;}
   .contact-top h2{font-size:clamp(28px,3.8vw,38px);font-weight:400;}
@@ -277,7 +279,8 @@
   .oferta-card .num{font-family:'JetBrains Mono';font-size:11.5px;color:var(--slate);float:right;}
 
   /* ---------- METODOLOGIA (full-bleed) ---------- */
-  .method{background:var(--blue-deep);color:var(--white);}
+  .method{background:var(--blue-deep);color:var(--white);position:relative;overflow:hidden;}
+  .method .wrap{position:relative;z-index:1;}
   .method .section-head .eyebrow{color:var(--blue-soft);}
   .method .section-head .eyebrow::before{background:var(--blue-soft);}
   .method .section-head h2{color:var(--white);}
@@ -306,6 +309,10 @@
   .faq-item summary::after{content:'+';font-family:'JetBrains Mono';font-size:20px;color:var(--blue);flex-shrink:0;}
   .faq-item[open] summary::after{content:'–';}
   .faq-item .faq-a{margin:0 0 22px;font-size:15.5px;color:var(--slate);line-height:1.6;max-width:70ch;}
+
+  /* ---------- SECTION WAVE (marca d'água sutil nos blocos de destaque escuros) ---------- */
+  .section-wave{position:absolute;top:0;left:0;width:100%;height:220px;z-index:0;pointer-events:none;}
+  @media (max-width:700px){.section-wave{height:140px;}}
 
   .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease, transform .6s ease;}
   .reveal.in{opacity:1;transform:translateY(0);}
@@ -418,6 +425,7 @@
 </section>
 
 <section class="method" id="metodologia">
+  <svg class="section-wave" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0,90 C240,40 480,140 720,90 C960,40 1200,140 1440,90 L1440,0 L0,0 Z" fill="rgba(255,255,255,.045)"/></svg>
   <div class="wrap">
     <div class="section-head reveal">
       <div class="eyebrow">Como trabalho</div>
@@ -517,6 +525,7 @@
 </section>
 
 <section class="stats-highlight" id="sobre">
+  <svg class="section-wave" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0,90 C240,40 480,140 720,90 C960,40 1200,140 1440,90 L1440,0 L0,0 Z" fill="rgba(255,255,255,.045)"/></svg>
   <div class="wrap">
     <div class="section-head reveal" style="margin-bottom:0;">
       <div class="eyebrow">Sobre nós</div>
